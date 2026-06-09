@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contacto — Página Dinâmica</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Display:wght@700;900&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet"/>
+   <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+
+<nav>
+  <span class="nav-logo">UC0507</span>
+  <a href="index.php">Início</a>
+  <a href="sobre.html">Sobre</a>
+  <a href="contacto.html" class="active">Contacto</a>
+</nav>
+
+<div class="page">
+  <div class="panel-left">
+    <div>
+      <div class="contact-tag">Fale connosco</div>
+      <p class="panel-desc">Tem alguma questão, sugestão ou proposta? Preencha o formulário e entraremos em contacto o mais brevemente possível.</p>
+
+      <div class="contact-info">
+        <div class="contact-info-item">
+          <div class="contact-info-icon">✉</div>
+          <div class="contact-info-text">
+            <div class="contact-info-label">E-mail</div>
+            geral@dinamica.pt
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-info-icon">☎</div>
+          <div class="contact-info-text">
+            <div class="contact-info-label">Telefone</div>
+            +351 220 000 000
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-info-icon">◎</div>
+          <div class="contact-info-text">
+            <div class="contact-info-label">Localização</div>
+            Porto, Portugal
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- RIGHT -->
+  <div class="panel-right" id="formPanel">
+    <p class="form-title">Enviar mensagem</p>
+<form action="processar.php" method="POST" >
+  <div id="contactForm">
+    <div class="form-row">
+      <div class="field">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" placeholder="O seu nome" autocomplete="off"/>
+      </div>
+      <div class="field">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="email@exemplo.com" autocomplete="off"/>
+      </div>
+    </div>
+
+    <div class="field">
+      <label for="assunto">Assunto</label>
+      <input type="text" id="assunto" name="assunto" placeholder="Como podemos ajudar?" autocomplete="off"/>
+    </div>
+
+    <div class="field">
+      <label for="mensagem">Mensagem</label>
+      <textarea id="mensagem" name="mensagem" placeholder="Escreva a sua mensagem aqui…"></textarea>
+    </div>
+
+    <div class="submit-row">
+      <button type="submit" class="btn-submit">
+        Enviar e Registar <span class="arrow">→</span>
+      </button>
+      <span class="form-note">Resposta em 24h úteis</span>
+    </div>
+  </div>
+</form>
+    <div class="success-msg" id="successMsg">
+      <div class="success-icon">✓</div>
+      <h2 class="success-title">Mensagem Enviada</h2>
+      <p class="success-text">Recebemos o seu contacto e responderemos brevemente.<br/>Obrigado por nos contactar.</p>
+      <button type="submit" class="btn-submit" style="margin-top:1.5rem" onclick="resetForm()">Enviar outra →</button>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <span>© 2026 UC0507. Todos os direitos reservados.</span>
+  <span>
+    <a href="index.php">Início</a> |
+    <a href="sobre.html">Sobre</a>
+
+  </span>
+</footer>
+</body>
+</html>
