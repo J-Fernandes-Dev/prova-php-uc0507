@@ -16,5 +16,5 @@ Este projeto foi desenvolvido como avaliação prática para o curso de Design e
 ## 📦 Como correr o projeto localmente
 1. Clone este repositório para a pasta `htdocs` do seu servidor local (MAMP/XAMPP).
 2. Importe o ficheiro SQL da base de dados (caso incluas a estrutura).
-3. Configure as credenciais em `config/conexao_pdo.php`.
+3. 3. Configure as credenciais em `conexao.php`.
 4. Aceda a `localhost:8888/nome-da-pasta`.
